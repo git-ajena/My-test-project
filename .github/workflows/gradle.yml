@@ -30,6 +30,6 @@ jobs:
       with:
         image: minumula/java_gradle_app
         registry: docker.io
-        enableBuildKit: true
+        enableBuildKit: false
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
