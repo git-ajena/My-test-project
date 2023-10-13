@@ -28,8 +28,8 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: java_demo_gradle_app
-        registry: 438135801323.dkr.ecr.us-east-1.amazonaws.com/java_demo_gradle
+        image: java_demo_gradle
+        registry: 438135801323.dkr.ecr.us-east-1.amazonaws.com
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
